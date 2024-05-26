@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="blog-tab">Блог</a></li>
+            <li><a href="output.html" id="admin-tab" class="active">Админ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="admin-container">
+    <h2>Добавить новый пост</h2>
+    <form id="post-form">
+        <div>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="anons">Анонс:</label>
+            <input type="text" id="anons" name="anons" required>
+        </div>
+        <div>
+            <label for="fulltext">Полный текст:</label>
+            <textarea id="fulltext" name="fulltext" required></textarea>
+        </div>
+        <div>
+            <label for="views">Просмотры:</label>
+            <input type="number" id="views" name="views" required>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+    <div id="response-message"></div>
+</div>
+
+<script src="admin-script.js"></script>
+</body>
+</html>
